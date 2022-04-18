@@ -2,7 +2,7 @@
   "compilerOptions": {
       "typeRoots": [
           "node_modules/@types", // 默认值
-          "src/types"
+          "types"
       ],
       "target": "esnext",
       "useDefineForClassFields": true,
@@ -21,5 +21,6 @@
       }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "**/*.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
